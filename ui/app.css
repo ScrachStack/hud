@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+  }
+  
+  .hud {
+    position: absolute;
+    top: 950px; /* Adjust the top position as needed */
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.177);
+    padding: 10px; /* Add padding to make the HUD container bigger */
+  }
+  
+  .player-name {
+    font-size: 24px; /* Increase font size for the player name */
+    margin-bottom: 10px; /* More space between player name and bars */
+  }
+  
+  .health-bar,
+  .armor-bar {
+    width: 300px; /* Increase the width of the bars */
+    height: 30px; /* Increase the height of the bars */
+    background-color: rgba(0, 0, 0, 0.177);
+    margin-bottom: 10px; /* More space between bars */
+    transform: skewX(-30deg); /* Skew the bars -30 degrees horizontally (slanted left) */
+  }
+  
+  .health-level {
+    border-radius: 5px; /* Adjust the border radius for more roundness */
+    border: 2px solid rgba(0, 0, 0, 0.5); /* Set border color to near-transparent black */
+    background-color: rgba(0, 255, 0, 0.8); /* Set health bar color to green */
+    font-size: 20px; /* Increase the font size for the health icon */
+  }
+  
+  .armor-level {
+    border-radius: 5px; /* Adjust the border radius for more roundness */
+    border: 2px solid rgba(0, 0, 0, 0.5); /* Set border color to near-transparent black */
+    background-color: rgba(0, 0, 255, 0.8); /* Set armor bar color to blue */
+    font-size: 20px; /* Increase the font size for the armor icon */
+  }
+  
+  .health-level:before,
+  .armor-level:before {
+    font-family: "Font Awesome 6 Free"; /* Font Awesome 6 Free is used in this example */
+    color: white;
+    padding-right: 10px; /* More space between icon and bar */
+  }
+  
